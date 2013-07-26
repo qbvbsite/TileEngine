@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Map name="TestMap">
+    <GameObjects>
+        <GameObject index="0" id="Stairs" x="640" y="384" z="1" width="64" height="32" image="images/stairs.png" isPenetrable="true">
+            <Logic class="com.tileengine.logic.LeaveMapLogic" type="Collide">
+                <Parameter type="String" value="Relative" />
+                <Parameter type="Integer" value="0" />
+                <Parameter type="Integer" value="70" />
+            </Logic>
+        </GameObject>
+        <Character index="1" id="Enemy" x="200" y="350" z="1" width="32" height="32" movementSpeed="2"
+                   image="images/npc.png" isPenetrable="false" 
+                   objectClass="com.tileengine.ResourceCharacterLoader">
+            <Logic class="com.tileengine.logic.DialogLogic" type="Custom">
+                <Parameter type="String" value="dialog/TestDialog.xml" />
+            </Logic>
+        </Character>
+        <GameObject index="2" id="Bolder" x="200" y="200" z="1" width="32" height="32" image="images/graybrick.png"
+                    isPenetrable="false">
+            <Logic class="com.tileengine.logic.DialogLogic" type="Custom">
+                <Parameter type="String" value="dialog/Help.xml" />
+            </Logic>
+        </GameObject>
+    </GameObjects>
+    <MapArea mapWidth="32" mapHeight="24" renderWidth="32" renderHeight="24" screenSnapping="true" layers="3" scrollBuffer="0">
+        <TileResources>
+            <Tile index="1" image="images/black.png" walkThroughTop="false" walkThroughRight="false" walkThroughBottom="false" walkThroughLeft="false" />
+            <Tile index="2" image="images/graybrick.png" walkThroughTop="false" walkThroughRight="false" walkThroughBottom="false" walkThroughLeft="false" />
+            <Tile index="3" image="images/wood.png" />
+        </TileResources>
+        <TileSet>
+            1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+            1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+            1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+            1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,2,3,3,3,3,3,3,2,3,3,2,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,2,3,3,3,3,3,3,2,3,3,2,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,2,3,3,3,3,3,3,2,3,3,2,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,2,3,3,3,3,3,3,2,2,2,2,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,
+            1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+            1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+            1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+        </TileSet>
+    </MapArea>
+</Map>

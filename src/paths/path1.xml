@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Path startX="128" startY="128" >
+        <PathGroup repeat="3">
+		<Move moveToX='704' moveToY='320' speed="4" pause="2" />
+                <Move moveToX='128' moveToY='128' speed="4" pause="4" />
+	</PathGroup>
+        <PathGroup repeat="2">
+		<Move moveToX='768' moveToY='128' speed="4" pause="4" />
+                <Move moveToX='128' moveToY='128' speed="4" pause="4" />
+	</PathGroup>
+</Path>

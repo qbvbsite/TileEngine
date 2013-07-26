@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Map name="TestMap">
+    <GameObjects>
+        <GameObject index="0" id="Door" x="450" y="640" z="1" width="64" height="15" image="images/door.png" isPenetrable="true" />
+        <GameObject index="1" id="Blank" x="450" y="639" z="1" width="64" height="15" image="images/blank.png" isPenetrable="true">
+            <Logic class="com.tileengine.logic.LeaveMapLogic" type="Collide">
+                <Parameter type="String" value="Absolute" />
+                <Parameter type="Integer" value="495" />
+                <Parameter type="Integer" value="295" />
+            </Logic>
+        </GameObject>
+        <GameObject index="2" id="Stairs" x="640" y="384" z="1" width="64" height="32" image="images/stairs.png" isPenetrable="true">
+            <Logic class="com.tileengine.logic.EnterMapLogic" type="Collide">
+                <Parameter type="String" value="maps/TestMapSecondFloor.xml" />
+                <Parameter type="String" value="Relative" />
+                <Parameter type="Integer" value="0" />
+                <Parameter type="Integer" value="-70" />
+            </Logic>
+        </GameObject>
+        <MoveableObject index="3" id="Enemy" x="200" y="150" z="1" width="32" height="32" movementSpeed="2" image="images/enemy.png"
+                        alpha="255,0,255" isPenetrable="false">
+            <Logic class="com.tileengine.logic.MoveLogic" type="General"/>
+        </MoveableObject>
+    </GameObjects>
+    <MapArea mapWidth="32" mapHeight="24" renderWidth="32" renderHeight="24" screenSnapping="true" layers="3" scrollBuffer="0">
+        <TileResources>
+            <Tile index="1" image="images/black.png" walkThroughTop="false" walkThroughRight="false" walkThroughBottom="false" walkThroughLeft="false" />
+            <Tile index="2" image="images/graybrick.png" walkThroughTop="false" walkThroughRight="false" walkThroughBottom="false" walkThroughLeft="false" />
+            <Tile index="3" image="images/wood.png" />
+        </TileResources>
+        <TileSet>
+            1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+            1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+            1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+            1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,2,3,3,3,3,3,3,3,2,2,2,2,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,3,3,2,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,3,3,2,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,3,3,2,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,1,1,1,
+            1,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,
+            1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+            1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+            1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+        </TileSet>
+    </MapArea>
+</Map>

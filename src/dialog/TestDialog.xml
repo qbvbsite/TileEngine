@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialog nextPage="Page1">
+    <Page name="Page1" text="Hey, My Name Is Jade" nextPage="Page2" />
+    <Page name="Page2" text="Would You Like to Fight">
+        <Option nextPage="No" text="No" />
+        <Option successPage="Yes" failPage="Fail" text="Yes">
+            <Logic class="com.tileengine.logic.SuccessFailLogic">
+                <Parameter type="Boolean" value="true" />
+            </Logic>
+        </Option>
+    </Page>
+    <Page name="No" text="Well That Sucks...For You!!!!" successPage="Yes" failPage="FailNo">
+        <Logic class="com.tileengine.logic.SuccessFailLogic">
+            <Parameter type="Boolean" value="true" />
+        </Logic>
+    </Page>
+    <Page name="Yes" text="Get Ready To Die" />
+    <Page name="Fail" text="Blah Your Not Worth My Time" />
+    <Page name="FailNo" text="You Gonna Kick Your Ass Anyways" />
+</Dialog>

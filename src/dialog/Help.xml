@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Dialog nextPage="Page1">
+    <Page name="Page1" text="Help Me Get This Bolder Off Me!!!" nextPage="Page2" />
+    <Page name="Page2" text="NOW!!!" />
+</Dialog>
