@@ -1,5 +1,5 @@
-TileEngine
+2D Tile Engine - Made in Java
 ==========
-Made public for others to learn/use. 
+Was going to be used as an apllet/desktop/andriod engine for 2D RPG games.
 
-This is no longer in development.
+I'm making this public for others to learn/use. So feel free to fork and use as you please. 
